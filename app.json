@@ -1,6 +1,6 @@
 {
-  "name": "X-tra Telegram",
-  "description": "Userbot created by a SNAPDRAGON and custom fork by ANUBIS\n\n join https://t.me/XtraTgChat for any problems or support",
+  "name": "Xfl4meUBOT",
+  "description": "Userbot in italiano con un sistema di installazione dei moduli.",
   "logo": "https://telegra.ph/file/1be6c59f53fef57b5745b.jpg",
   "keywords": [
     "telegram",
@@ -9,53 +9,53 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Dark-Princ3/X-tra-Telegram/",
+  "repository": "https://github.com/xfl4me/UpdatedUserbot/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
     "ENV": {
-      "description": "Setting this to ANYTHING will enable heroku.",
+      "description": "Lascia questo com'è.",
       "value": "ANYTHING"
     },
     "TEMP_DOWNLOAD_DIRECTORY": {
-      "description": "Where downloaded files will go.",
+      "description": "La cartella dove i file scaricati verranno salvati nel server, se non sai cosa significa non cambiare il valore.",
       "value": "./userbot/DOWNLOADS/",
       "required": false
     },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Prendi questa da my.telegram.org",
       "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Prendi questa da my.telegram.org",
       "value": ""
     },
     "STRING_SESSION": {
-      "description": "Get this value by running python3 telesetup.py locally",
+      "description": "Prendi questa eseguendo python3 telesetup.py in termux (devi clonare la repository)",
       "value": ""
     },
     "MAX_FLOOD_IN_P_M_s": {
-      "description": "Maximum number of messages a person can send in pm before getting blocked. Value must be an integer. 3 by default.",
-      "value": "3",
+      "description": "Il numero massimo di messaggi che una persona può mandarti in privata prima di essere bloccata (a meno che non la approvi).",
+      "value": "5",
       "required": false
     },
     "OCR_SPACE_API_KEY": {
-      "description": "Required for OCR functionality. Get from https://ocr.space/ocrapi",
+      "description": "Richiesta per la funzionalità ocr, ma non obbligatoria. Prendila da https://ocr.space/ocrapi",
       "value": "",
       "required": false
     },
     "REM_BG_API_KEY": {
-      "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
+      "description": "Richiesta per la funzionalità della rimozione dello sfondo da un immagine, ma non obbligatoria. Prendila da https://www.remove.bg/",
       "value": "",
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
-      "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
+      "description": "Non compilarla a meno che non sai cosa significa.",
       "value": "",
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: Total-Noob-69/X-Tra-Telegram, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Non compilarla a meno che non sai cosa significa.",
       "value": "",
       "required": false
     },
@@ -65,7 +65,7 @@
       "required": false
     },
     "TG_BOT_TOKEN_BF_HER": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+      "description": "Crea un bot su BotFather e incolla qui il token.",
       "value": "",
       "required": false
     },
@@ -80,25 +80,25 @@
       "required": false
     },
     "TG_BOT_USER_NAME_BF_HER": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
+      "description": "Incolla l'username del tuo bot che hai creato prima in questo formato: http://t.me/username",
       "value": "",
       "required": false
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
-      "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
+      "description": "Richiesto per il modulo autopic. Un link che sia la preview della tua foto profilo",
       "value": "",
       "required": false
     },
     "TZ": {
-      "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-      "value": "Asia/Kolkata",
+      "description": "Richiesto per impostare correttamente il tempo. Puoi prenderla da http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Europe/Rome",
       "required": false
     }
   },
   "addons": [{
     "plan": "heroku-postgresql",
     "options": {
-      "version": "9.6"
+      "version": "12"
     }
   }],
   "buildpacks": [{
